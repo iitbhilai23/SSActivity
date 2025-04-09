@@ -133,7 +133,7 @@ function ItemVerification({ itemType: propItemType }) {
     const exceededItems = selectedItems.filter(item => (submissionCountByItem[item.item_id] || 0) >= 2);
 
     if (exceededItems.length > 0) {
-      toast.error("आप कुछ आइटम के लिए पहले ही 2 बार verification कर चुके हैं। कृपया अपने Cluster से संपर्क करें।");
+      toast.error("आप 2 बार सत्यापन कर चुके हैं। पुनः सत्यापन हेतु कृपया संकुल समन्वयक से संपर्क करें। सत्यापित।");
       return;
     }
 

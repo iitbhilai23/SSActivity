@@ -12,9 +12,9 @@ function SchoolItemDetailPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // डिबगिंग शुरू
+ 
     console.log("useEffect ट्रिगर हुआ, school_code:", school_code);
-    let isMounted = true; // माउंटेड चेक
+    let isMounted = true; 
 
     const fetchItems = async () => {
       setLoading(true);
@@ -43,7 +43,7 @@ function SchoolItemDetailPage() {
 
     if (school_code) fetchItems();
 
-    // क्लीनअप
+
     return () => {
       isMounted = false;
     };
