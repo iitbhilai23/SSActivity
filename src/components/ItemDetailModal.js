@@ -29,7 +29,7 @@ function ItemDetailModal({ data, onClose }) {
           <span className="school-code">UDISE: {data.school_code}</span>
         </div>
 
-        {/*  Items Table */}
+        {/*  Items Table data */}
         <table>
           <thead>
             <tr>
