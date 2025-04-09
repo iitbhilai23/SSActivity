@@ -1,0 +1,89 @@
+/* Main Container */
+.fln-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading */
+  .fln-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+  
+  /* Form Layout */
+  .fln-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  /* Each Input Group */
+  .fln-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 200px;
+  }
+  
+  /* Labels */
+  .fln-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input + Select Fields */
+  .fln-form input,
+  .fln-form select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .fln-form input:focus,
+  .fln-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Row */
+  .button-group {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+/* Single Full-Width Button */
+.single-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .single-button .btn-submit {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .single-button .btn-submit:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,199 @@
+/* ItemVerification.css */
+
+.verification-container {
+  padding: 20px;
+  background: #f9f9fb;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 40px auto 0px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 2px solid #a38aad;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 15px 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.filter-row label {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+}
+
+.filter-row select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease;
+}
+
+.filter-row select:focus {
+  border-color: #3e0d63;
+  outline: none;
+}
+
+.verification-form {
+  table-layout: fixed;
+}
+
+.verification-form table {
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 15px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.verification-table th,
+.verification-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+
+}
+.verification-table th {
+  padding: 8px 10px;
+}
+.verification-table td{
+  padding: 1.5px 10px;
+}
+
+.verified-row {
+  background-color: #eaffea;
+}
+
+.unverified-row {
+  background-color: #fff9f9;
+}
+
+.received-row {
+  background-color: #d6f5d6 !important;
+}
+
+.not-received-row {
+  background-color: #ffd6d6 !important;
+}
+
+.checkbox-input {
+  transform: scale(1.2);
+  margin-right: 6px;
+}
+
+.status-label {
+  font-weight: bold;
+}
+
+.status-label.verified {
+  color: green;
+}
+
+.status-label.unverified {
+  color: red;
+}
+
+.remarks-input {
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f7fff7;
+  transition: border 0.3s ease;
+}
+
+.remarks-input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.verify-all-btn {
+  background-color: #482a53;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.verify-all-btn:hover {
+  background-color: #161717;
+}
+
+.summary-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 12px 16px;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #482a53;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+.status-radio {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.status-radio label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.status-radio input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

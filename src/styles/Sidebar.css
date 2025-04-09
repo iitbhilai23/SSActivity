@@ -1,0 +1,107 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    /* background: #181818; */
+    /* background: #41295a;  */
+background: -webkit-linear-gradient(to left, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2F0743, #41295a) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+   
+}
+
+.sidebar-menu li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    transition: all 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+.sidebar-menu li a,
+.sidebar-menu li span {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+/* Sidebar Icons */
+.sidebar-menu li .icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Sidebar Links */
+.sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Hover Effect */
+.sidebar-menu li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    /* cursor: pointer; */
+}
+
+/* Logout Button */
+.logout-item {
+    margin-top: auto;
+}
+
+.logout-item button {
+    width: 100%;
+    /* background: red;eee3f1 */
+    background: #eee3f1;
+    /* color: white; */
+    color: #270733;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logout-item button:hover {
+    /* background: darkred; */
+    background: #270733;
+    color: #eee3f1;
+}
+
+.logo{
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #eee3f1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

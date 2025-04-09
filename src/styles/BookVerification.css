@@ -1,0 +1,52 @@
+.verification-container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    top: 60px;
+}
+
+.user-info {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.verification-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.verification-form th, .verification-form td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.verification-form input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.verification-form input[type="text"],
+.verification-form input[type="number"] {
+    padding: 5px;
+    width: 90%;
+}
+
+.verification-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.verification-form button:hover {
+    background: #218838;
+}

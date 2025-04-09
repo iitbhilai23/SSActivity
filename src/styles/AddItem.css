@@ -1,0 +1,60 @@
+/* AddItem.css */
+
+.add-item-container {
+    max-width: 1400px; /* Container width increased */
+    /* margin: 50px auto; */
+    margin-top: 70px;
+    padding: 40px;
+    background-color: #f7f9fb;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-item-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 32px;
+  }
+  
+  .add-item-container form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 50px;
+  }
+  
+  .add-item-container input,
+  .add-item-container select {
+    padding: 12px 20px; /* Increased width of input boxes */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-item-container input:focus,
+  .add-item-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .add-item-container button {
+    grid-column: span 2;
+    padding: 14px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-item-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-item-container select option {
+    font-size: 16px;
+  }
+  

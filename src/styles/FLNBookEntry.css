@@ -1,0 +1,223 @@
+/*  Container */
+.fln-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    top: 70px;
+}
+
+/*  Custom Tabs */
+.custom-tabs {
+    display: flex;
+    justify-content: space-between;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.custom-tabs button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.custom-tabs button.active {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+}
+
+/*  Tab Content */
+.tab-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Form Styling */
+.fln-form input,
+.fln-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.fln-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fln-form button:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+th{
+    background: #492b54;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+th, td {
+    padding: 5px 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+/* ✅ Header Section: Title Left, Search Bar Right */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; 
+    max-width: 1200px !important;
+}
+
+/* ✅ Title Styling */
+.left-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2F0743;
+}
+
+/* ✅ Search Bar */
+.search-bar {
+    padding: 8px;
+    font-size: 14px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ✅ Table Styling - Consistent Layout */
+.fln-table th, .fln-table td {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* ✅ Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    margin: 5px;
+    border: none;
+    background-color: #2F0743;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 14px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+
+/* For EDIT Model Box Design code   */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    
+    
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}

@@ -1,0 +1,92 @@
+.summary-container {
+    padding: 20px;
+    margin-top: 50px;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .summary-heading {
+    text-align: center;
+    color: #3f214b;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 220px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-total {
+    background-color: #1e88e5; /* 🟦 Total Schools - Blue */
+  }
+  
+  .card-verified {
+    background-color: #43a047; /* 🟩 Verified Items - Green */
+  }
+  
+  .card-unverified {
+    background-color: #e53935; /* 🟥 Unverified Items - Red */
+  }
+  
+  .card-remarks {
+    background-color: #fbc02d; /* 🟨 Remarks Found - Yellow */
+    color: black;
+  }
+  
+  .summary-table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  }
+  
+  .summary-table th, .summary-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .summary-table th {
+    background-color: #3f214b;
+    color: white;
+  }
+  
+  .summary-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: gray;
+    padding: 15px;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,58 @@
+/* 🌟 Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Move title to right */
+    align-items: center;
+   
+background: -webkit-linear-gradient(to left, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #cbb4d4, #20002c) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    position: fixed;
+    width: calc(100% - 250px);
+    height: 70px;
+    left: 250px;
+    top: 0;
+    /* z-index: 100; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+/*  Right-Aligned Title */
+.navbar-title {
+    text-align: right;
+    flex: 1;
+}
+
+
+.navbar-title h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        width: calc(100% - 220px);
+        left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        justify-content: flex-end; /* ✅ Keeps it right-aligned on small screens */
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-title h2 {
+        font-size: 16px;
+    }
+}
