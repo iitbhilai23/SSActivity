@@ -10,7 +10,7 @@ const interceptor = axios.create({
     },
 });
 
-// Request Interceptor: Attach Authorization Token
+// Request Interceptor: Attach Authorization Tokenl;
 interceptor.interceptors.request.use(
     (config) => {
         const token = sessionStorage.getItem("token") || localStorage.getItem("token");
