@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import AuthProvider from "./context/AuthContext";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import PublicRoute from "./routes/PublicRoute";
@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound"; //  Import 404 Page
 function App() {
     return (
         <AuthProvider>
-            <Router>
+          
                 <Routes>
                     {/* Public Routes */}
                     <Route path="/" element={<PublicRoute><Login /></PublicRoute>} />
@@ -25,7 +25,7 @@ function App() {
                     {/* 404 Page */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            </Router>
+         
         </AuthProvider>
     );
 }
